@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "linked_list",
+      "request": "launch",
+      "mainClass": "linked_list",
+      "projectName": "linked_list_114d19f"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/rajasimha/Desktop/DSA/DATA_STRUCTURES/linked_list",
+      "program": "/Users/rajasimha/Desktop/DSA/DATA_STRUCTURES/linked_list/build/Debug/outDebug"
+    }
+  ]
+}
