@@ -1,6 +1,7 @@
 class node {
     int data;
     node next;
+    public boolean onDeleteMe;
     public node(int value,node next){
         this.data = value; // assign the value to the current data
         this.next = next; // assign for the null value
@@ -18,6 +19,22 @@ class node {
         for (int i : value){
             this.insert_after(i);
         }
+    }
+    public void setValue(int k) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setValue'");
+    }
+    public node getNextNode() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNextNode'");
+    }
+    public int getValue() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getValue'");
+    }
+    public void setNextNode(node node) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setNextNode'");
     }
 }
 class operations{

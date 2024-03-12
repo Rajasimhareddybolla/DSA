@@ -1,4 +1,3 @@
-package dobule_linked_list;
 class node {
     private int data ; 
     private node prev ; 
@@ -137,10 +136,10 @@ class node_operations{
     }
     public void print(){
         node ptr = serializer.getNext();
-       do {
+        while (ptr!= serializer) {
             System.out.println("element in the index :" + ptr.getData());
             ptr = ptr.getNext();
-        } while (ptr!= serializer);
+        } ;
     }
     // need further implementaion to erase data and to find data easily
     public boolean erase(int index){
@@ -212,10 +211,4 @@ public class db_link_list {
         node.getOperations().print();
 
     }   
-
-
-
-
-
-
 }

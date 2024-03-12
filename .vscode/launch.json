@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "hash",
+      "request": "launch",
+      "mainClass": "hash",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/rajasimha/Desktop/DSA/DSA_G/DATA_STRUCTURES/HASH_MAPS",
+      "program": "/Users/rajasimha/Desktop/DSA/DSA_G/DATA_STRUCTURES/HASH_MAPS/build/Release/outRelease"
+    }
+  ]
+}
