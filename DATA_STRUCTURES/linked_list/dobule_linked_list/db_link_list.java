@@ -11,7 +11,7 @@ class node {
 
     }
     public node(){ // constructing serializer
-        this.data = -999;
+        this.data= data;
         this.next = this;
         this.prev = this;
         this.head = new head(this);
@@ -201,8 +201,8 @@ class head{
 public class db_link_list {
     public static void main(String[] args) {
         node node = new node(); //serializer for all the nodes
-        node.add_before(76,node.getHead());
-        node.add_after(98,node.getHead());
+        node.add_before(76,node.getHead()); // 76         
+        node.add_after(98,node.getHead());  //    
         node.getNext().add_before(760,node.getHead());
         node.getOperations().print();
         System.out.print("size of the linked list is :" );

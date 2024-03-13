@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "hash_probe",
+      "request": "launch",
+      "mainClass": "hash_probe",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
+      "name": "db_link_list",
+      "request": "launch",
+      "mainClass": "db_link_list",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
       "name": "hash",
       "request": "launch",
       "mainClass": "hash",
