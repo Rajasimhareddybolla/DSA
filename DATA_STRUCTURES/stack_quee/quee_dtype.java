@@ -1,28 +1,29 @@
-class quee{ // implementaition via linked_list
+package stack_quee;
+public class quee_dtype{ // implementaition via linked_list
     private int data ;
-    private quee nextQuee;
-    private quee prevQuee;
-    public quee(int value , quee next){
+    private quee_dtype nextQuee;
+    private quee_dtype prevQuee;
+    public quee_dtype(int value , quee_dtype next){
         data =value;
         nextQuee = next;
     }
-    public quee(int value){
+    public quee_dtype(int value){
         this(value,null);
     }
-    public quee(){
+    public quee_dtype(){
         this(-999);
     }
         /**
      * @return quee return the prevQuee
      */
-    public quee getPrevQuee() {
+    public quee_dtype getPrevQuee() {
         return prevQuee;
     }
 
     /**
      * @param prevQuee the prevQuee to set
      */
-    public void setPrevQuee(quee prevQuee) {
+    public void setPrevQuee(quee_dtype prevQuee) {
         this.prevQuee = prevQuee;
     }
         /**
@@ -42,22 +43,22 @@ class quee{ // implementaition via linked_list
     /**
      * @return quee return the nextQuee
      */
-    public quee getNextQuee() {
+    public quee_dtype getNextQuee() {
         return nextQuee;
     }
 
     /**
      * @param nextQuee the nextQuee to set
      */
-    public void setNextQuee(quee nextQuee) {
+    public void setNextQuee(quee_dtype nextQuee) {
         this.nextQuee = nextQuee;
     }
 }
 class operations{
-    private quee headQuee;
-    private quee tailQuee;
+    private quee_dtype headQuee;
+    private quee_dtype tailQuee;
     private int size ;
-    public operations(quee heaQuee, quee tailQuee){
+    public operations(quee_dtype heaQuee, quee_dtype tailQuee){
         this.headQuee = heaQuee;
         this.tailQuee = tailQuee;
         this.size = 0 ;
@@ -67,7 +68,7 @@ class operations{
         this.tailQuee.setPrevQuee(this.headQuee);
     }
     public void enquee(int data){
-        quee temp_quee = new quee(data);
+        quee_dtype temp_quee = new quee_dtype(data);
         temp_quee.setNextQuee(this.tailQuee);
         temp_quee.setPrevQuee(this.tailQuee.getPrevQuee());
         this.tailQuee.getPrevQuee().setNextQuee(temp_quee);
@@ -75,7 +76,7 @@ class operations{
         size ++;
     }
     public int dequee(){
-        quee next =  this.headQuee.getNextQuee().getNextQuee();
+        quee_dtype next =  this.headQuee.getNextQuee().getNextQuee();
         int value = next.getPrevQuee().getData();
         this.headQuee.setNextQuee(next);
         next.setPrevQuee(this.headQuee);
@@ -86,17 +87,4 @@ class operations{
         return !(this.size>0);
     }
 
-}
-public class  quee_dtype {
-    public static void main(String[] args) {
-        
-        quee headQuee = new quee();
-        quee tailQuee = new quee();
-        operations op = new operations(headQuee, tailQuee);
-        op.enquee(45);
-        op.enquee(56);
-        op.dequee();
-        System.out.println(headQuee.getData() +"  "+headQuee.getNextQuee().getData()+"  "+headQuee.getNextQuee().getNextQuee().getData() );
-    }
-    
 }

@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "string_search",
+      "request": "launch",
+      "mainClass": "problems.string_search",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
       "name": "hash_probe",
       "request": "launch",
       "mainClass": "hash_probe",
@@ -20,6 +27,13 @@
       "name": "hash",
       "request": "launch",
       "mainClass": "hash",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
+      "name": "problems",
+      "request": "launch",
+      "mainClass": "string_search",
       "projectName": "DSA_G_5a200b2f"
     },
     {

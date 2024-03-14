@@ -20,7 +20,7 @@ class hash_p {
         return value%capacity;
     }
     public int hash_probe (int key , int probe){ // collision is rare in dobule hashing
-        return(hash_f(key)+probe*hash_f(key) )%  capacity;  
+        return (hash_f(key)+probe*hash_f(key)+probe)%  capacity;  
     }
     public void check_resize(){     // importent function which cheack whether we need to resize the arr are not 
         if(this.size >= this.threshold)
