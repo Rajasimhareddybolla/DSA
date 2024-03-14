@@ -1,0 +1,2 @@
+
+print("abcdhell".find("hell"))
