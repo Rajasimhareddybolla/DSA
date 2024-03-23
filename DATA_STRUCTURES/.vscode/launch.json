@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "tree",
+            "request": "launch",
+            "mainClass": "tree",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "compeny_x",
+            "request": "launch",
+            "mainClass": "compeny_x",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "db_link_list",
+            "request": "launch",
+            "mainClass": "dobule_linked_list.db_link_list",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "tree",
+            "request": "launch",
+            "mainClass": "trees.tree",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "trees.test",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "hash_probe",
+            "request": "launch",
+            "mainClass": "hash_probe",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "hash_raja",
+            "request": "launch",
+            "mainClass": "hash_raja.hash_raja",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "linked",
+            "request": "launch",
+            "mainClass": "linked",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "linked_list",
+            "request": "launch",
+            "mainClass": "linked_list",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "min_stack",
+            "request": "launch",
+            "mainClass": "stack_quee.min_stack",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "quee_array",
+            "request": "launch",
+            "mainClass": "stack_quee.quee_array",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "DATA_STRUCTURES_7723d635"
+        }
+    ]
+}

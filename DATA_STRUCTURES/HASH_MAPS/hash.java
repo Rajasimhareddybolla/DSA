@@ -79,7 +79,7 @@ class MyHashMap {
             this.reHash();
         
     }
-    private void rehash_insert(int k , node [] arr){
+    public void rehash_insert(int k , node [] arr){
         int hash = this.hash_function(k);
         node head = arr[hash];
         if (head == null)
@@ -90,7 +90,7 @@ class MyHashMap {
             head.setNextNode(new node(k));
         }
     }
-    private void reHash(){
+    public void reHash(){
         node [] arr = new node[this.capacity * 2];
         this.capacity *= 2 ; // due to change in the hash function we are using rehash method after changing the capacity 
         for (int i = 0 ; i < this.capacity ; i ++){

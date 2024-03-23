@@ -1,4 +1,19 @@
-package problems;
+import java.lang.Math;
+class permutations_combinations{
+    public int factorial(int k ){
+        if (k == 1){
+            return k;
+        }
+        return factorial(k-1)*k;
+    }
+    public double permutations(int n , int r ){
+        return factorial(n) /( factorial(r)*factorial(n-r));
+    }
+    public double combinations(int n , int r){
+        return factorial(n) / factorial(n-r);
+    }
+}
+
 // in this one we have search a sequence of chars in the data given so i used a node insertion and deletion by using stack 
 // and searching with O(m+n) where m = len(data) n = len(search_variable) which actually takes O(m*n) when you use normal for loop
 // hear n = len(search_data) added becoz on hash_equal you need to crosscheck right so we will loop to check its really matches or not 

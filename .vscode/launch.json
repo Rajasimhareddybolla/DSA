@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "tree",
+      "request": "launch",
+      "mainClass": "trees.tree",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
+      "name": "binery",
+      "request": "launch",
+      "mainClass": "Algorithms.Binery_search.binery",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
+      "name": "tree",
+      "request": "launch",
+      "mainClass": "tree",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
+      "name": "min_stack",
+      "request": "launch",
+      "mainClass": "stack_quee.min_stack",
+      "projectName": "DSA_G_5a200b2f"
+    },
+    {
+      "type": "java",
       "name": "string_search",
       "request": "launch",
       "mainClass": "problems.string_search",
