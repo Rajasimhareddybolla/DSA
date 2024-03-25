@@ -124,6 +124,7 @@ class trees{
             }
         }
     }
+
     public boolean search(int data , node ptr){
         if (data > ptr.getData()){
             if(ptr.getRightNode() == null){
@@ -143,17 +144,19 @@ class trees{
 
     }
     public void print_data(node n){
-        if(n.getLeftNode()!=null){
+        if(n.getLeftNode() != null){
             print_data(n.getLeftNode());
         }
-
-        else if(n.getRightNode()!=null){
-            print_data(n.getRightNode());
-        }   
         else{
             System.out.println(n.getData());
         }
-        
+        if(n.getRightNode() != null){
+            print_data(n.getRightNode());
+        }
+        else{
+            if (n.getLeftNode() != null)
+                System.out.println(n.getData());
+        }
     }
 }
 public class tree{
