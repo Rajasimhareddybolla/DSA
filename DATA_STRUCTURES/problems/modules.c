@@ -10,7 +10,6 @@ void byte(int no ){
     {
         counter--;
         no = no /2;
-        
     }
     
 }

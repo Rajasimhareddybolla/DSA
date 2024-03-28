@@ -1,3 +1,7 @@
+package trees;
+import stack_quee.quees.operations;
+import stack_quee.quees.quee_dtype;
+
 class node{
     private int data;
     private node leftNode;
@@ -143,19 +147,21 @@ class trees{
         }
 
     }
+    public void dfs(node root){ // it uses the stack which is compilers stack to get data 
+        if (root != null){
+        dfs(root.getLeftNode());
+        System.out.println(root.getData());
+        dfs(root.getRightNode());
+        }
+    }
     public void print_data(node n){
         if(n.getLeftNode() != null){
             print_data(n.getLeftNode());
         }
-        else{
-            System.out.println(n.getData());
-        }
+        System.out.println(n.getData());
+
         if(n.getRightNode() != null){
             print_data(n.getRightNode());
-        }
-        else{
-            if (n.getLeftNode() != null)
-                System.out.println(n.getData());
         }
     }
 }
@@ -175,6 +181,8 @@ public class tree{
         System.out.println(t1.search(992));
         System.out.println(t1.base.getLeftNode().search(0));
         t1.print_data(t1.base);
+        System.out.println("dfs starts now");
+        t1.dfs(t1.base);
     }
 
 }
